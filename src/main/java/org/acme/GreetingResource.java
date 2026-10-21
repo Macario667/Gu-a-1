@@ -9,6 +9,11 @@ import jakarta.ws.rs.core.MediaType;
 @Path("/hello")
 public class GreetingResource {
 
+    /**
+     * Inject sirve para inyectar un objeto de un bean existente 
+     * en el contexto de la aplicación.
+     * En este caso, el bean GreetingService.
+     */
     @Inject 
     GreetingService service;
 
